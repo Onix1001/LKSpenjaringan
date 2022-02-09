@@ -1,0 +1,75 @@
+.container {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border: 5px solid black;
+    box-sizing: border-box;
+    grid-template-columns: 0.6fr 0.9fr 0.5fr 0.4fr 0.1fr 0.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 'st st nav1 nav2 nav2 nav3' 'pt pt pt pt sb sb' 'pm mc mc mc sb sb' 'pm mc mc mc ads ads' 'pm mci mci mci ads ads' 'pm mci mci mci oth oth' 'pm mci mci mci oth oth' 'fo fo fo fo fo fo';
+}
+
+div {
+    margin: 2px;
+}
+
+.ST {
+    grid-area: st;
+    background-color: rgb(241, 238, 14);
+}
+
+.Nav1 {
+    grid-area: nav1;
+    background-color: rgb(255, 72, 200);
+}
+
+.Nav2 {
+    grid-area: nav2;
+    background-color: rgb(255, 72, 200);
+}
+
+.Nav3 {
+    grid-area: nav3;
+    background-color: rgb(255, 72, 200);
+}
+
+.PT {
+    grid-area: pt;
+    background-color: rgb(53, 208, 255);
+}
+
+.SB {
+    grid-area: sb;
+    background-color: #3134eb;
+}
+
+.PM {
+    grid-area: pm;
+    background-color: rgb(53, 255, 188);
+}
+
+.MC {
+    grid-area: mc;
+    background-color: rgb(230, 131, 255);
+}
+
+.MCI {
+    grid-area: mci;
+    background-color: rgb(251, 255, 30);
+}
+
+.ads {
+    grid-area: ads;
+    background-color: rgb(54, 255, 28);
+}
+
+.Other {
+    grid-area: oth;
+    background-color: rgb(183, 27, 255);
+}
+
+.footer {
+    grid-area: fo;
+    background-color: rgb(255, 64, 64);
+}
